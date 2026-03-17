@@ -4,27 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title> NexBionics </title>
+    <style>
+        body {
+            background-color: #0A8999;
+            color: #e0e0e0;
+        }
+        .fondo-nav {
+            background-color: #ffffff;
+            border-bottom: 2px solid #c2f8ff;
+        }
+
+        .navbar-brand {
+            font-size: 2rem !important; 
+            font-weight: bold; 
+            letter-spacing: 1px; 
+        }
+       
+        .navbar-nav .nav-link {
+            transition: color 0.5s ease; 
+            color: #004047; 
+        }
+     
+        .navbar-nav .nav-link:hover {
+            color: #03d8f0 !important; 
+
+        }
+
+    </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/CK4KS49w/logo-nexbionics.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
   <header>
-        <nav>
-            <h1>NexBionics</h1>
-        <ul>
-            <li><a href="#quienes-somos">Quiénes Somos</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark fondo-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#" style="color: #43EAE5;">NexBionics</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ubicacion">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
-    <section id="quienes-somos">
-      <h2>Quiénes Somos</h2>
-      <p>Somos un emprendimiento innovador dedicado al diseño y fabricación de prótesis personalizadas de alta tecnología. Nuestro compromiso es mejorar la calidad de vida de nuestros usuarios, brindando movilidad, confort y confianza a través de soluciones accesibles y a medida.</p>
-    </section>
+   <section id="quienes-somos" class="container-fluid py-5">
+    <div class="row align-items-center justify-content-around px-lg-5">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+            <h1 class="display-2 fw-bold mb-4" style="color: #008080;"> Más allá <br> 
+                <span class="text-dark">de los límites humanos</span>
+            </h1>
+            <p class="lead mb-5 text-muted">
+                Somos un emprendimiento innovador dedicado al diseño y fabricación de prótesis personalizadas de alta tecnología para mejorar tu calidad de vida.
+            </p>
+            <a href="#productos" class="btn btn-lila-claro btn-lg px-5 py-3 shadow-sm">Explorar</a>
+        </div>
+
+        <div class="col-lg-4">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade rounded-5 shadow-lg overflow-hidden" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.postimg.cc/6qYG8pch/Protesis-1.png" class="d-block w-100" alt="Prótesis 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/cHdHfNr3/Protesis-2.png" class="d-block w-100" alt="Prótesis 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/CMP1nXYc/Protesis-3.png" class="d-block w-100" alt="Prótesis 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+    </div>
+</section>
     <section id="productos">
         <h2>Productos</h2>
         <p>
@@ -48,19 +134,22 @@
     
   </main>
   <footer>
-    <h2>Ubicación</h2>
-    <p>
-        Avenida Santa Rosa<br>
-        Ciudad de La Paz, Bolivia
-    </p>
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <p>
+            Avenida Santa Rosa<br>
+            Ciudad de El Alto, Bolivia
+        </p>
+    </section>
     
-    <h2>Contacto</h2>
-    <p>
-        Email: contacto@protesisvital.com<br>
-        Teléfono: 71930501
-    </p>
-  </footer> 
-    
-
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>
+            Email: contacto@nexbionics.com<br>
+            Teléfono: 71930501
+        </p>
+    </section>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
