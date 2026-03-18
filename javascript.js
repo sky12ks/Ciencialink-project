@@ -24,7 +24,7 @@ document.querySelector('a[href="#darkmode"]').addEventListener('click', function
     const titulos = document.querySelectorAll('h1, h2, h3, h4, h5, p:not(#llamado-accion p), li, .text-muted:not(#llamado-accion .text-muted), .nav-link, .navbar-brand');
 
     if (bandera){
-        // ================= MODO CLARO =================
+       
         document.body.style.backgroundColor = "#ffffff";
         document.body.style.color = "#333333";
         
@@ -47,7 +47,10 @@ document.querySelector('a[href="#darkmode"]').addEventListener('click', function
         });
 
     } else {
-        // ================= MODO OSCURO =================
+        
+
+
+
         document.body.style.backgroundColor = "#021616";
         document.body.style.color = "#B2EBF2";
         
