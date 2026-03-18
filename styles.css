@@ -68,7 +68,7 @@ h2 {
 }
 
 p, ul, li {
-    color: #333333; 
+    color: #ffffffef; 
     margin-top: 0;
     line-height: 1.6; 
 }
@@ -76,7 +76,7 @@ p, ul, li {
 
 footer {
     background-color: #c2ffff;
-    color: #34CBCB;
+    color: #dbffff;
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
