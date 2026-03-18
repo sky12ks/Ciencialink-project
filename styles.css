@@ -12,7 +12,8 @@ body {
 header {
     background-color: #ffffff; 
     color: #FFFFFF;
-    border-bottom: #60ade0 solid 2px;
+    border-bottom: #ffffff solid 2px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -79,4 +80,6 @@ footer {
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
-    border-top: #60ade0 solid 2px;
+    border-top: #f0f0f0 solid 2px;
+
+
