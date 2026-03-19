@@ -18,10 +18,10 @@ document.querySelector('a[href="#darkmode"]').addEventListener('click', function
     e.preventDefault(); 
 
 
-    const secciones = document.querySelectorAll('header, main, section:not(#llamado-accion)');
+    const secciones = document.querySelectorAll('header, main, section:not(#contacto), footer');
     const cajitas = document.querySelectorAll('.card');
     const header = document.querySelector('nav'); 
-    const titulos = document.querySelectorAll('h1, h2, h3, h4, h5, p:not(#llamado-accion p), li, .text-muted:not(#llamado-accion .text-muted), .nav-link, .navbar-brand');
+    const titulos = document.querySelectorAll('h1, h2, h3, h4, h5, p:not(#contacto p), li, .text-muted:not(#contacto .text-muted), .nav-link, .navbar-brand');
 
     if (bandera){
        
